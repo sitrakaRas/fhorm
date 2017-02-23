@@ -6,7 +6,8 @@
     "modernizr": "~2.8.1",
     "slick-carousel": "^1.6.0",
     "masonry": "^4.1.1",
-    "fancybox": "^2.1.6"
+    "fancybox": "^2.1.6",
+    "components-font-awesome": "^4.7.0"
   },
   "overrides": {
     "bootstrap-sass": {
