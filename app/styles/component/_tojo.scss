@@ -1,7 +1,26 @@
 a:hover {
   text-decoration: none;
 }
+a.read-more {
+  display: inline-block;
+  text-align: left;
+  color: #243141;
+  font-size: 14px;
+  font-family: 'DINOT-Black';
+  padding-right: 25px;
+  background: url('../images/main/arrow-dark-blue.png') no-repeat right center transparent;
+}
+.needClear {
+  display: block;
+}
+#site-head {
+  position: fixed;
+  width: 100%;
+  z-index: 130;
+}
 #top-navbar {
+  position: relative;
+    z-index: 120;
   background-color: #3e63ac;
   border-radius: 0;
   border: none;
@@ -11,9 +30,9 @@ a:hover {
 }
 #top-navbar .navbar-brand{
   position: relative;
+  z-index: 120;
   padding: 0 15px;
   height: 48px;
-  z-index: 99;
 }
 #top-menu-wrapper {
   float: right;
@@ -83,10 +102,12 @@ a:hover {
 }
 #main-navbar {
   position: relative;
-  background-color: rgba(62,99,172,0.6);
+  background: url('../images/header/bg-main-menu.png') repeat-x top center transparent;
   margin: 0;
   border: none;
   border-radius: 0;
+  position: relative;
+    z-index: 99;
 }
 #main-navbar:after {
   position: absolute;
@@ -211,6 +232,230 @@ a:hover {
   font-family: 'montserratbold';
   color: #fff;
 }
+/* carousel */
+#bs-carousel {
+  position: relative;
+  z-index: 1; 
+}
+#bs-carousel .slideBg {
+  height: 765px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#bs-carousel .carousel-indicators {
+  width: 20px;
+    left: 50%;
+    margin-left: 40%;
+    bottom: 40%;
+}
+#bs-carousel .carousel-indicators li {
+  opacity: 0.3;
+  border: none;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+}
+#bs-carousel .carousel-indicators li.active {
+  opacity: 1;
+}
+#bs-carousel .hero {
+  position: absolute;
+  top: 420px;
+  width: 700px;
+  margin-left: -15px;
+}
+#bs-carousel .hero h1 {
+  font-family: 'montserratextra_bold';
+  color: #fff;
+  font-size: 48px;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 45px;
+}
+#bs-carousel .hero h3 {
+  font-family: 'DINOT-Regular';
+  font-style: italic;
+  color: #fff;
+  font-size: 27px;
+  margin: 0;
+}
+#bs-carousel .hero .btn {
+  margin: 30px 25px 0 0;
+  padding:13px 40px 13px 30px;
+  line-height: 18px;
+  vertical-align: middle;
+  border: none;
+  border-radius: 0;
+  color: #3e63ac;
+  font-size: 14px;
+  font-family: 'montserratbold';
+  text-transform: uppercase;
+}
+#bs-carousel .hero .btn.btn-hero-default {
+  background: url('../images/header/arrow-blue.png') no-repeat 85% center #ffffff;
+}
+#bs-carousel .hero .btn.btn-hero-orange {
+  background: url('../images/header/arrow-white.png') no-repeat 85% center #ecab66;
+}
+/* main content */
+#main-content-wrapper {
+  position: relative;
+  margin-top: -120px;
+  z-index: 120;
+}
+#main-content {
+  background-color: #f4f4f5;
+}
+#main-content .main-title {
+  color: #309af4;
+  font-size: 28px;
+  font-family: 'montserratextra_bold';
+  text-transform: uppercase;
+  margin: 50px 0 20px 0;
+  padding-bottom: 15px;
+  position: relative;
+}
+#main-content .main-title:after {
+  position: absolute;
+  content: '';
+  width: 45px;
+  height: 5px;
+  left: 0;
+  bottom: 0;
+  background: url('../images/main/afterMainTitle.png') no-repeat top center transparent;
+  opacity: 0.5;
+}
+#main-content .post-item {
+  clear: both;
+  margin-bottom: 15px;
+  float: left;
+}
+#main-content .post-item .thumb .wp-post-image{
+  border-radius: 50%;
+  border: 8px solid #e6e6e6;
+}
+#main-content .post-item p .item-title {
+  font-family: 'DINOT-Black';
+  color: #3e63ac;
+}
+#main-content .post-item p {
+  font-family: 'DINOT-Regular';
+  font-style: italic;
+  color: #515355;
+  font-size: 16px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+#main-content .post-item .item-sep {
+  display: block;
+  width: 90%;
+  margin-left: 5%;
+  border-top: 1px solid #e6e6e6;
+}
+#main-content .shadow-after-content {
+  height: 13px;
+  background: url('../images/main/shadow_content.png') no-repeat top center transparent;
+  margin-bottom: 10px;
+}
+#load-more {
+  font-family: 'DINOT-Black';
+  font-size: 14px;
+  color:#44494e;
+  clear: both;
+  margin-bottom: 20px;
+}
+#load-more a {
+  color:#44494e;
+  display: inline-block;
+  padding:10px 0 10px 30px;
+  background: url('../images/main/load-more-icon.png') no-repeat left center transparent;
+}
+#main-sidebar {
+  background-color: #e09d0e;
+}
+#edito .block-thumb {
+  padding: 0;
+  position: relative;
+}
+#edito .block-thumb:after {
+  position: absolute;
+  content: '';
+  width: 35px;
+  height: 35px;
+  right: 0;
+  bottom: 0;
+  background: url('../images/main/president-arrow.png') no-repeat left center transparent;
+}
+#main-sidebar #edito h2 {
+  position: relative;
+  font-size: 26px;
+  font-family: 'DINOT-Regular';
+  font-style: italic;
+  color: #fff;
+  padding-bottom: 20px;
+  margin-top: 55px;
+    line-height: 29px;
+}
+#main-sidebar #edito h2 span {
+  font-family: 'DINOT-Black';
+}
+#main-sidebar #edito h2:after {
+  position: absolute;
+  content: '';
+  width: 45px;
+  height: 4px;
+  left: 0;
+  bottom: 0;
+  background-color: #fff;
+}
+#main-sidebar #edito .edito-content {
+  font-family: 'DINOT-Regular';
+  font-size: 15px;
+  color: #efeff1;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#main-sidebar #edito .edito-content p {
+  margin-bottom: 25px;
+}
+#nl-widget {
+  background: url('../images/main/bg-newletter.png') no-repeat right center #363637;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: 'DINOT-Regular';
+}
+#nl-widget h2{
+  color: #309af4;
+  font-size: 30px;
+  font-style: italic;
+  margin: 10px 0 20px 0;
+}
+#nl-widget h2 span{
+  font-family: 'DINOT-Black';
+}
+#nl-widget p {
+  color: #f4f4f5;
+  font-size: 12px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+#nl-widget .nl-form input[type='email'] {
+  background-color: #efeff1;
+  border: none;
+  outline: none;
+  margin-bottom: 20px;
+  width: 80%;
+  border-radius: 0;
+  color: #309af4;
+}
+#nl-widget .nl-form .btn {
+  background: url('../images/main/arrow-orange.png') no-repeat right center transparent;
+  color: #309af4;
+  border: none;
+  padding: 0 20px 0 0;
+  font-style: italic;
+  outline: none;
+}
 @media screen and (max-width: 480px) {
   #block-search {
     right: 70px!important;
@@ -221,6 +466,12 @@ a:hover {
   #block-search .search-form .search-submit {
     width: 60%;
       margin-left: 10px;
+  }
+  #main-content .post-item .thumb {
+    text-align: center;
+  }
+  #main-content .post-item .thumb .wp-post-image{
+    float: none;
   }
 }
 
@@ -292,6 +543,37 @@ a:hover {
   #main-footer .footer-widget-list h3:after {
     left: 43%;
   }
+  #bs-carousel .slideBg {
+    height: 300px;
+  }
+  #bs-carousel .hero {
+    top: 100px!important;
+  }
+  #bs-carousel .hero h1 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  #bs-carousel .hero h3 {
+      font-size: 18px;
+  }
+  #bs-carousel .hero .btn {
+    margin: 20px 0 0 0;
+  }
+  #main-content-wrapper {
+    margin-top: 0;
+  }
+  #main-content .shadow-after-content {
+    clear: both;
+  }
+  #main-content .post-item .thumb .wp-post-image {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #edito .block-thumb img{
+    width: 100%;
+  }
+  
+  
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -313,13 +595,49 @@ a:hover {
       height: 35px;
       padding: 5px;
   }
+  #main-sidebar #edito h2 {
+    font-size: 20px;
+    margin-top: 30px;
+  }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   #block-search .search-form {
     background: none;
   }
   #block-search .search-form .search-field {
     display: none;
+  }
+  #bs-carousel .carousel-indicators {
+    display: none;
+  }
+  #bs-carousel .slideBg{
+      background-position: center center;
+  }
+  #bs-carousel .hero {
+    top: 250px;
+    width: 100%;
+    text-align: center;
+  }
+  .needClear {
+    display: inline-block;
+  }
+  #edito .block-thumb:after {
+    display: none;
+  }
+  #edito .block-thumb .thumb-wrap {
+    width: 170px;
+    height: 170px;
+    margin: 25px auto 0 auto;
+    position: relative;
+  }
+  #edito .block-thumb .thumb-wrap:after {
+      position: absolute;
+      content: '';
+      width: 35px;
+      height: 35px;
+      right: 0;
+      bottom: 0;
+      background: url(../images/main/president-arrow.png) no-repeat left center transparent;
   }
 }

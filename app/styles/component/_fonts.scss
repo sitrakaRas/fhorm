@@ -50,3 +50,16 @@
     font-style: normal;
 
 }
+
+@font-face {
+    font-family: 'montserratextra_bold';
+    src: url('#{$icon-font-path}montserrat-extrabold-webfont.eot');
+    src: url('#{$icon-font-path}montserrat-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$icon-font-path}montserrat-extrabold-webfont.woff2') format('woff2'),
+         url('#{$icon-font-path}montserrat-extrabold-webfont.woff') format('woff'),
+         url('#{$icon-font-path}montserrat-extrabold-webfont.ttf') format('truetype'),
+         url('#{$icon-font-path}montserrat-extrabold-webfont.svg#montserratextra_bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

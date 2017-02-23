@@ -1,0 +1,86 @@
+.wrapper{
+	background-color: red;
+	padding: 30px 35px;
+}
+.navigation{
+	ul{
+		list-style: none;
+		padding-left: 0;
+		background-color : $blanc;
+		li{
+			border-bottom: 1px solid red;
+			a{
+				text-transform: uppercase;
+				text-decoration: none;
+				font-size: 16px;
+				line-height: 1;
+				vertical-align: middle;
+				color : $gris-txt;
+				padding: 20px 50px;
+				display: inline-block;
+				width: 100%;
+				&:hover{
+					background-color : $orange;
+					width : 105%;
+					width: calc( 100% + 15px);
+					color: $blanc;
+					font-family: $helveticaNeueMed;		
+				}
+			}
+			&.active{
+				a{
+					background-color : $orange;
+					width : 105%;
+					width: calc( 100% + 15px);
+					color: $blanc;
+					font-family: $helveticaNeueMed;					
+				}
+			}
+		}
+	}
+}
+
+.text-box{
+	color : $black-text;
+	h1,.titre-h1{
+		margin-top: 0;
+		font-size: 60px;
+		font-weight: 400;
+		margin-bottom: 40px;
+		span{
+			display: block;
+		}
+		&:after{
+			content: "";
+			width : 55px;
+			height: 1px;
+			background-color: $orange;
+			display: block;
+			margin-top: 10px;
+		}
+	}
+	p{
+		font-family: $helveticaNeueReg;
+		font-size: 16px;
+		line-height: 21px;
+		letter-spacing: -0.025em;
+		margin-bottom: 20px;
+		strong{
+			font-family: $helveticaNeueMed;
+			font-size: 21px;
+			line-height: 21px;
+			font-weight: 400;
+			letter-spacing: -0.025em;
+		}
+	}
+	h2,.titre-h2{
+		color : $orange-titre;
+		font-size: 21px;
+		line-height: 21px;
+		font-weight: 400;
+		font-family: $helveticaNeueMed;
+		margin-bottom: 20px;
+		letter-spacing: -0.025em;
+		margin-top: 0;
+	}
+}
