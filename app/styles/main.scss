@@ -8,8 +8,9 @@ $icon-font-path: '../fonts/';
 @import "component/spritesheet";
 @import "component/fonts";
 @import "component/mixins";
-@import "component/tojo";
 @import "component/base";
+@import "component/tojo";
+
 
 .browserupgrade {
   margin: 0.2em 0;

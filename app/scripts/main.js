@@ -7,8 +7,7 @@ jQuery(document).ready(function($) {
 
 function createAdditionnalMenu() {
 	var windowWidth = $(window).width();
-	//$('#search-icon .after-icon').css('width', parseInt($('#top-navbar .container').css('margin-right').replace('px', '')) + 15);
-	$('#search-icon .after-icon').css('width', (windowWidth - $(".container").outerWidth(true)) + 15);
+	$('#search-icon .after-icon').css('width', (windowWidth - $(".container").outerWidth()) + 15);
 	
 	if (windowWidth < 768) {		
 		if (!$('#top-menu').hasClass('hasAdditionnalMenu')) {
