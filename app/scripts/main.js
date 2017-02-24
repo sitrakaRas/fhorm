@@ -1,6 +1,6 @@
 function createAdditionnalMenu() {
 	var windowWidth = $(window).width();
-	$('#search-icon .after-icon').css('width', (windowWidth - $(".container").outerWidth()) + 15);
+	$('#search-icon .after-icon').css('width', (windowWidth - $('.container').outerWidth()) + 15);
 	
 	if (windowWidth < 768) {		
 		if (!$('#top-menu').hasClass('hasAdditionnalMenu')) {
@@ -25,16 +25,16 @@ $(function(){
 		arrows: true 
 	};
 
-	xpresshop.sliderSlide($(".slider-one"),arg_slide);
+	xpresshop.sliderSlide($('.slider-one'),arg_slide);
 	
-	$(window).on("resize",function(){
+	$(window).on('resize',function(){
 		createAdditionnalMenu();
-		var marge = ($(window).width() - $(".container").width() )/2;
-		$(".section-top-slider .slider-one .slick-prev").css("left",marge + "px");
-		$(".section-top-slider .slider-one .slick-next").css("right",marge + "px");
+		var marge = ($(window).width() - $('.container').width() )/2;
+		$('.section-top-slider .slider-one .slick-prev').css('left',marge + 'px');
+		$('.section-top-slider .slider-one .slick-next').css('right',marge + 'px');
 	});
 
-	$(window).trigger("resize");
+	$(window).trigger('resize');
 
 	$('.check-list li').each(function() {
 		$(this).click(function() {
@@ -45,5 +45,5 @@ $(function(){
 			return false;
 		});
 	});
-	$("#price-range").slider();
+	$('#price-range').slider();
 });

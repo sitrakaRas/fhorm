@@ -770,10 +770,9 @@ a.read-more {
 #hotel-listing {
   background-color: #f5f4f4;
   padding-top: 30px;
-  padding-bottom: 30px;
   float: left;
   .member-item {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     position: relative;   
     .member-item-wrap {
       background-color: #ffffff;
@@ -854,6 +853,22 @@ a.read-more {
       }
     }
   }
+}
+.no-padd-slider {
+  padding-top: 0;
+  &:after{
+    background: transparent url("../images/header/ombre_menu.png") no-repeat scroll center center;
+      bottom: -45px;
+      content: "";
+      height: 25px;
+      position: absolute;
+      width: 100%;
+      left : 50%;
+    transform : translate(-50%);
+  }
+}
+.internal-add {
+  margin: 25px 0;
 }
 
 
