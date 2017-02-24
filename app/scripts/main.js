@@ -30,8 +30,8 @@ $(function(){
 	$(window).on('resize',function(){
 		createAdditionnalMenu();
 		var marge = ($(window).width() - $('.container').width() )/2;
-		$('.section-top-slider .slider-one .slick-prev').css('left',marge + 'px');
-		$('.section-top-slider .slider-one .slick-next').css('right',marge + 'px');
+		$('.slider-full.section-top-slider .slider-one .slick-prev').css('left',marge + 'px');
+		$('.slider-full.section-top-slider .slider-one .slick-next').css('right',marge + 'px');
 	});
 
 	$(window).trigger('resize');
