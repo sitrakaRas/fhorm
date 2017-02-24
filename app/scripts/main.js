@@ -13,7 +13,7 @@ function createAdditionnalMenu() {
 }
 
 var xpresshop = {
-	slider: function(parent,arg){
+	sliderSlide: function(parent,arg){
         parent.slick(arg);
     }
 }
@@ -25,7 +25,7 @@ $(function(){
 		arrows: true 
 	};
 
-	xpresshop.slider($(".slider-one"),arg_slide);
+	xpresshop.sliderSlide($(".slider-one"),arg_slide);
 	
 	$(window).on("resize",function(){
 		createAdditionnalMenu();
@@ -45,5 +45,5 @@ $(function(){
 			return false;
 		});
 	});
-	$("#price-range").slider({});
+	$("#price-range").slider();
 });

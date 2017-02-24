@@ -7,7 +7,9 @@
     "slick-carousel": "^1.6.0",
     "masonry": "^4.1.1",
     "fancybox": "^2.1.6",
-    "components-font-awesome": "^4.7.0"
+    "components-font-awesome": "^4.7.0",
+    "seiyria-bootstrap-slider": "^9.7.2",
+    "bootstrap-datepicker": "^1.6.4"
   },
   "overrides": {
     "bootstrap-sass": {
