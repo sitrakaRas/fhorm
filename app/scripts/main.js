@@ -36,5 +36,14 @@ $(function(){
 
 	$(window).trigger("resize");
 
-	
+	$('.check-list li').each(function() {
+		$(this).click(function() {
+			var targetInput = $(this).data('target');
+			$(this).siblings().removeClass('clicked');
+			$(this).addClass('clicked');
+			$(targetInput).val($(this).data('value'));
+			return false;
+		});
+	});
+	$("#price-range").slider({});
 });
