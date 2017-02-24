@@ -63,3 +63,42 @@
     font-style: normal;
 
 }
+
+
+@font-face {
+    font-family: 'helveticaNeueMed';
+    src: url('#{$icon-font-path}HelveticaNeue-Medium.woff2') format('woff2'),
+        url('#{$icon-font-path}HelveticaNeue-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'helveticaNeueReg';
+    src: url('#{$icon-font-path}helveticaneue-regular_22623-webfont.woff2') format('woff2'),
+         url('#{$icon-font-path}helveticaneue-regular_22623-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'helveticaNeueLt';
+    src: url('#{$icon-font-path}helveticaneue-light-webfont.woff2') format('woff2'),
+         url('#{$icon-font-path}helveticaneue-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'helveticaNeueB';
+    src: url('#{$icon-font-path}helveticaneue-bold-webfont.woff2') format('woff2'),
+         url('#{$icon-font-path}helveticaneue-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
