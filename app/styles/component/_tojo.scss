@@ -856,9 +856,22 @@ a.read-more {
 }
 .no-padd-slider {
   padding-top: 0;
+  position: relative;
+  .slider {
+    .item {
+      height: 430px;
+      .contenu {
+        width: 70%;
+        left: 15%;
+        top: 45%;
+        transform: none;
+        -webkit-transform: none;
+      }
+    }
+  }
   &:after{
     background: transparent url("../images/header/ombre_menu.png") no-repeat scroll center center;
-      bottom: -45px;
+      bottom: -25px;
       content: "";
       height: 25px;
       position: absolute;
@@ -869,6 +882,10 @@ a.read-more {
 }
 .internal-add {
   margin: 25px 0;
+}
+
+.text-box h2.dark-text, .text-box .titre-h2.dark-text {
+  color: $dark-text;
 }
 
 
