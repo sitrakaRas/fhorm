@@ -888,6 +888,75 @@ a.read-more {
   color: $dark-text;
 }
 
+#section-address {
+  margin: 15px auto 25px auto;
+  .coord {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: $gris-fond;
+    .coord-bloc {
+      .coord-bloc-header {
+        text-align: center;
+        background-color: #3e63ac;
+        height: 55px;
+        vertical-align: middle;
+        display: block;
+        padding: 15px;
+        h2 {
+          color: $blanc;
+          font-family: $helveticaNeueBold;
+          font-size: 18px;
+          text-transform: uppercase;
+          margin: 0;
+          line-height: 25px;
+        }
+      }
+      .coord-content {
+        background-color: $blanc;
+        padding: 40px 25px;
+        ul {
+          display: block;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          li {
+            display: block;
+            text-transform: uppercase;
+            font-family: $helveticaNeueReg;
+            color: $gris-txt;
+            font-size: 14px;
+            padding: 10px 25px 10px 50px;
+            background: no-repeat left center transparent;
+            &.money {
+              background-image: url('../images/main/capitale.png');
+              color: #3e63ac;
+              font-family: $helveticaNeueBold;
+            }
+            &.address {
+              background-image: url('../images/main/map.png');
+              background-position: left 15px;
+            }
+            &.tel {
+              background-image: url('../images/main/tel.png');
+            }
+            &.fax {
+              background-image: url('../images/main/fax.png');
+            }
+            &.web {
+              background-image: url('../images/main/web.png');
+            }
+            a {
+              color:$orange;
+              font-family: $helveticaNeueBold;
+              text-transform: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 
 @media screen and (max-width: 350px) {
   .modal-dialog .modal-content .modal-header .modal-link li{
