@@ -83,25 +83,91 @@ a.read-more {
   text-decoration: none;
 }
 #search-icon {
-  display: inline-block;
+  display: none;
+  float: right;
+  .input-form{
+    position : absolute;
+    right: 60px;
+    width: 0px;
+    height: 48px;
+    border : none;
+    box-shadow : none;
+    padding: 0;
+    z-index: 100;
+    @include transition(width 0.3s ease);
+    &:focus{
+      width: 190px;
+      padding : 0 10px;
+    }
+  }
+  @media only screen and (min-width : 768px){
+      display: inline-block;
+      &:hover{
+        .input-form{
+        width: 190px;
+        padding : 0 10px;
+        @include transition(width 0.3s ease);
+      }
+    }
+  } 
+  .complement{
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 48px;
+    content: '';
+    background-color: #e09d0e;
+    z-index: -1;
+  }
+}
+#search-icon .after-icon {
+   display: inline-block;
   float: right;
   cursor: pointer;
   padding: 0 30px;
   height: 48px;
   width: 25px;
   background-color: #e09d0e;
-  text-indent: -9999px;
+  //text-indent: -9999px;
   position: relative;
   background: url('../images/header/searchIcon.png') no-repeat center center #e09d0e;
+  border : none;
+  box-shadow : none;
 }
-#search-icon .after-icon {
-  position: absolute;
-    top: 0;
-    left: 60px;
-    width: 0;
-    height: 48px;
-    content: '';
-    background-color: #e09d0e;
+.search-mobile{
+    display: block;
+    @media only screen and (min-width : 768px){
+      display: none;
+    }
+  #search-icon-mobile{
+    margin-bottom: 10px;
+    overflow: hidden;
+    .input-form{
+      position : relative;
+      width: 190px;
+      height: 48px;
+      border : none;
+      box-shadow : none;
+      z-index: 100;
+      padding : 0 10px;
+      @include transition(width 0.3s ease);
+      float: right;
+    }
+    .after-icon {
+      display: inline-block;
+      float: right;
+      cursor: pointer;
+      padding: 0 30px;
+      height: 48px;
+      width: 25px;
+      background-color: #e09d0e;
+      //text-indent: -9999px;
+      position: relative;
+      background: url('../images/header/searchIcon.png') no-repeat center center #e09d0e;
+      border : none;
+      box-shadow : none;
+    }
+  }
 }
 #main-navbar {
   position: relative;

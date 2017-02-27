@@ -2,7 +2,7 @@
 
 function createAdditionnalMenu() {
 	var windowWidth = $(window).width();
-	$('#search-icon .after-icon').css('width', windowWidth - $('.container').outerWidth() + 15);
+	$('#search-icon .complement').css('width', windowWidth - $('.container').outerWidth() + 15);
 
 	if (windowWidth < 768) {
 		if (!$('#top-menu').hasClass('hasAdditionnalMenu')) {
